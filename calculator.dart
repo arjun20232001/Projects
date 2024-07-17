@@ -26,8 +26,8 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomePage extends State<Homepage> {
- String output="0";
- String currentnumber='';
+ String output="";
+ String currentnumber="";
  double num1=0;
  String operand="";
  void buttonPressed(String buttonText)
