@@ -109,13 +109,25 @@ class _HomePage extends State<Homepage> {
               child: Container(
                 alignment: Alignment.bottomRight,
                 padding: EdgeInsets.all(10),
-                child: Text(
-                  "$output",
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text(
+                      "$operand",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      "$output",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                )
               ),
             ),
             Row(
